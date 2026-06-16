@@ -1,4 +1,4 @@
-# metric-collector-bab31e
+# metric-collector-8a9c47
 
 A Go metric-collector utility.
 
